@@ -15,11 +15,8 @@ public class RepetitionExpression extends Expression{
 
     @Override
     public boolean match(Context context) {
-        boolean flag = false;
-
         while(exp.match(context)){
-            flag = true;
         }
-        return flag;
+        return true;
     }
 }
