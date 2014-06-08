@@ -19,4 +19,11 @@ public class SequenceExpression extends Expression {
     public boolean match(Context context) {
         return (exp1.match(context) && exp2.match(context));
     }
+
+    @Override
+    public void Accept(ExpressionVisitor visitor) {
+        visitor.visit(this);
+        exp1.Accept(visitor);
+        exp2.Accept(visitor);
+    }
 }

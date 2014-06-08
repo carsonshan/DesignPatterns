@@ -23,4 +23,17 @@ public class LiteralExpression extends Expression {
         context.removeNChar(str.length());
         return true;
     }
+
+    @Override
+    public void Accept(ExpressionVisitor visitor) {
+        visitor.visit(this);
+    }
+
+    public String getStr() {
+        return str;
+    }
+
+    public void setStr(String str){
+        this.str = str;
+    }
 }

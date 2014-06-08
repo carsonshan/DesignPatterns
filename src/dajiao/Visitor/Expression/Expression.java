@@ -7,4 +7,5 @@ package dajiao.Visitor.Expression;
  */
 public abstract class Expression {
     public abstract boolean match(Context context);
+    public void Accept(ExpressionVisitor visitor){}
 }

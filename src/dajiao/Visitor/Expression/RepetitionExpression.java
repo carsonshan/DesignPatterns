@@ -19,4 +19,10 @@ public class RepetitionExpression extends Expression {
         }
         return true;
     }
+
+    @Override
+    public void Accept(ExpressionVisitor visitor) {
+        visitor.visit(this);
+        exp.Accept(visitor);
+    }
 }
