@@ -12,3 +12,7 @@ containing (up to now):
 Decorator
 
 Interpreter
+
+Visitor
+
+ps: it seems no more patterns will be added...^_^
