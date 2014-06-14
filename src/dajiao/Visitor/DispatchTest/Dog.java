@@ -11,13 +11,11 @@ public class Dog extends Animal{
         System.out.println("Dog eat Food");
         System.out.println(food.getClass().toString());
     }
-
     @Override
     public void eat(Fish fish){
         System.out.println("Dog eat Fish");
         System.out.println(fish.getClass().toString());
     }
-
     @Override
     public void eat(Mutton mutton){
         System.out.println("Dog eat Mutton");

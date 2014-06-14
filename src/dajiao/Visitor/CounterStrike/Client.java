@@ -41,7 +41,5 @@ public class Client {
             attackPair.getPlayer().AttackBy(attackPair.getWeapon());
         }
         // game over! Couter-Terrorist Win!
-
-
     }
 }
